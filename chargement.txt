@@ -1,0 +1,13 @@
+Un main crée un objet ChargeurMagasin nommé "chargeur"
+Ce main lance la méthode chargerMagasin() sur chargeur 
+chargeur crée un objet de type Magasin nommé "magasin"
+et après il crée aussi un objet de type ChargeurCD nommé "chargeCd1" avec en paramètre un nom de fichier 
+chargeur appele chargerCD() sur	chargeCd1
+chargeCd1 crée un objet de type CD nommé cd1 avec un nom d'artiste et et nom de cd en paramètres
+et après chargeCd1 effectue 2 fois la même manipulation qui est :
+	Appel de la méthode extrairePiste() sur chargeCd1
+	Appel de ajouterPiste sur cd1
+c'est la fin de la méthode ChargerCD()
+chargeur apelle la méthode ajouterCd() avec l'objet cd1 de type CD sur magasin
+c'est la fin de la méthode chargerMagasin
+        
