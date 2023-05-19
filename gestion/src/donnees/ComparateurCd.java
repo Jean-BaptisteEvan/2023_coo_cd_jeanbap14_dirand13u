@@ -1,3 +1,5 @@
+package donnees;
+
 import donnees.CD;
 
 public interface ComparateurCd {

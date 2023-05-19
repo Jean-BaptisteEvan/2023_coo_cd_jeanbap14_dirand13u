@@ -1,4 +1,4 @@
-import donnees.CD;
+package donnees;
 
 public class ComparateurArtiste implements ComparateurCd{
 
@@ -9,7 +9,7 @@ public class ComparateurArtiste implements ComparateurCd{
     public boolean etreAvant(CD cd1, CD cd2) {
         boolean comp = false;
         int res = cd1.getNomArtiste().compareTo(cd2.getNomArtiste());
-        if(res >= -1){
+        if(res <= 0){
             comp = true;
         }
         return comp;
