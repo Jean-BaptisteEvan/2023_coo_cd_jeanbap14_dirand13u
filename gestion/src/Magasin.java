@@ -117,7 +117,7 @@ public class Magasin {
     }
 
     // FinTODO ajouter une methode de tri
-    public void trierAlbum() {
+    public void trier(ComparateurCD xxx) {
         // tri par selection
         int nbCDs = this.listeCds.size();
         for (int i = 0; i < nbCDs; i++) {
@@ -127,7 +127,8 @@ public class Magasin {
             int indiceSelection = i;
             for (int j = i + 1; j < nbCDs; j++) {
                 CD cdTemp = listeCds.get(j);
-                if (cdTemp.etreAvant(cdSelectionne)) {
+                boolean comp = xxx.etreAvant(cdTemp,cdSelectionne)
+                if (comp) {
                     indiceSelection = j;
                     cdSelectionne = cdTemp;
                 }
